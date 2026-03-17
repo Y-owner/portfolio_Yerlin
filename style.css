@@ -22,3 +22,69 @@ section{
 h2{
     color: #1e1e2f;
 }
+
+.nav-item {
+ font-family: Arial, Helvetica, sans-serif;
+ color: #0a0606;
+}
+
+.navbar-nav{
+  list-style: none; 
+}
+.hamburguesa {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000; 
+  transition: 0.3s;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* oculto */
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(41, 137, 150);
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  transition: 0.3s;
+
+}
+
+/* Links */
+.sidebar a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 15px;
+  display: block;          /* Hace que ocupe todo el ancho */
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* efecto al pasar mouse */
+  padding-left: 25px; /* pequeño efecto de movimiento */
+}
+
+/* Clase que lo muestra */
+.sidebar.active {
+  left: 0;
+}
+.hamburguesa.move{
+  left: 260px;
+}
+
+.card{
+  background-color: #1bb9d4;
+  width: 700px;
+  margin: auto;
+  border-style: solid;
+  border-radius: 10px;
+  margin-top: 6%;
+  text-align: center;
+}
