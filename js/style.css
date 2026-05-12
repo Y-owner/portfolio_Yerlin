@@ -1,0 +1,119 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #84cae9;
+}
+
+header{
+    background-color: #1e2e2f;
+    color: #ffffff;
+    columns: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+section{
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    color: #000000;
+}
+
+h2{
+    color: #1e1e2f;
+}
+
+.nav-item {
+ font-family: Arial, Helvetica, sans-serif;
+ color: #0a0606;
+}
+
+.navbar-nav{
+  list-style: none; 
+}
+.hamburguesa {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000; 
+  transition: 0.3s;
+  color: #ffffff;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* oculto */
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(41, 137, 150);
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  transition: 0.3s;
+
+}
+
+/* Links */
+.sidebar a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 15px;
+  display: block;          /* Hace que ocupe todo el ancho */
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* efecto al pasar mouse */
+  padding-left: 25px; /* pequeño efecto de movimiento */
+}
+
+/* Clase que lo muestra */
+.sidebar.active {
+  left: 0;
+}
+.hamburguesa.move{
+  left: 260px;
+}
+
+.card{
+  background-color: #1bb9d4;
+  width: 700px;
+  margin: auto;
+  border-style: solid;
+  border-radius: 10px;
+  margin-top: 6%;
+  text-align: center;
+}
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+  gap:20px;
+}
+.target{
+  background-color: #6adfcb;
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-radius: 10px;
+  margin-top: 6%;
+  text-align:center;
+}
+
+.caja{
+  width: 100vw;           /* Responsive: se adapta al contenedor */
+  min-height: 10px;     /* Altura inicial */
+  resize: none;          /* Desactiva el tirador manual para que JS tome el control */
+  overflow: hidden;      /* Esconde el scroll interno */
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.contenedor{
+width: 100%; /* Ancho completo */
+}
