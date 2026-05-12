@@ -41,6 +41,7 @@ h2{
   cursor: pointer;
   z-index: 1000; 
   transition: 0.3s;
+  color: #ffffff;
 }
 
 /* Sidebar */
@@ -87,4 +88,32 @@ h2{
   border-radius: 10px;
   margin-top: 6%;
   text-align: center;
+}
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+  gap:20px;
+}
+.target{
+  background-color: #6adfcb;
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-radius: 10px;
+  margin-top: 6%;
+  text-align:center;
+}
+
+.caja{
+  width: 100vw;           /* Responsive: se adapta al contenedor */
+  min-height: 10px;     /* Altura inicial */
+  resize: none;          /* Desactiva el tirador manual para que JS tome el control */
+  overflow: hidden;      /* Esconde el scroll interno */
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.contenedor{
+width: 100%; /* Ancho completo */
 }
